@@ -7,6 +7,7 @@ string[] enterArray(int size)
         Console.WriteLine("enter the cell value");
         NewArray[i] = Console.ReadLine();
     }
+    Console.WriteLine();
     Console.WriteLine(string.Join(",  ", NewArray));
     return NewArray;
 }
@@ -47,7 +48,7 @@ void filterValuesOfArray(string[] Array, int ValuesFilter)
             Index++;
         }
     }
-    Console.WriteLine(string.Join(",  ", NewArray));
+    Console.WriteLine(string.Join(", ", NewArray));
 }
 
 
@@ -55,6 +56,7 @@ const int SIZE = 7;    // размер массива
 const int VALUESFILTER = 3; // ввод значения фильтра, максимальное количество искомых символов в ячейке
 
 string[] Arr = enterArray(SIZE);
+Console.WriteLine ();
 filterValuesOfArray(Arr, VALUESFILTER);
 
 
